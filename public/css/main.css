@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: #fff; }
+
+body {
+  background: #1c92d2;
+  background: -webkit-linear-gradient(to left, #f2fcfe, #1c92d2);
+  background: linear-gradient(to left, #f2fcfe, #1c92d2);
+  text-align: center;
+  font-size: 16px; }
+  body #todo-table {
+    max-width: 1024px;
+    flex-basis: 350px;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 5px; }
+    body #todo-table form {
+      display: flex; }
+      body #todo-table form input[type="text"] {
+        padding: 1.5rem;
+        background: rgba(80, 103, 123, 0.2);
+        flex-grow: 5;
+        flex-shrink: 1;
+        min-width: 150px;
+        border: 0;
+        outline: none;
+        font-size: 1.1rem; }
+        body #todo-table form input[type="text"]::placeholder {
+          color: rgba(255, 255, 255, 0.7); }
+      body #todo-table form button {
+        flex-grow: 1;
+        padding: 1rem;
+        background: #39414b;
+        border: 0;
+        cursor: pointer;
+        font-size: .8rem; }
+        body #todo-table form button:hover {
+          background: #4f5a68; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  width: 100%;
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  letter-spacing: 1px;
+  color: rgba(80, 103, 123, 0.7); }
+  li:hover {
+    text-decoration: line-through;
+    background: rgba(255, 255, 255, 0.2); }
