@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build-css": "node-sass styles styles/main.scss  -o public/css -w",
-    "dev": "nodemon app"
+    "start": "node app",
+    "build-css": "node-sass styles styles/main.scss  -o public/css -w"
   },
   "author": "",
   "license": "ISC",
