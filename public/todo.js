@@ -20,7 +20,7 @@ $(document).ready(() => {
     var item = '/' + $(this).text().trim().replace(/ /g, "-");
     fetch("/todo" + item, {
       method: 'DELETE'
-    }).then(() => location.replace("/todo"));
+    }).then((res) => $(this).remove());
   });
 
 });

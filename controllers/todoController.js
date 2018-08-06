@@ -21,6 +21,6 @@ module.exports = app => {
     data = data.filter(todo => {
       return todo.item.replace(/ /g, '-') !== req.params.item;
     });
-    res.json();
+    res.send('success');
   });
 };
